@@ -53,11 +53,6 @@ function App() {
     });
   };
 
-  // Show login screen if not authenticated
-  if (!isAuthenticated) {
-    return <Login onLogin={handleLogin} />;
-  }
-
   useEffect(() => {
     // Reset to appropriate default tab when role changes
     if (currentRole === 'public') {
@@ -66,6 +61,11 @@ function App() {
       setActiveTab('dashboard');
     }
   }, [currentRole]);
+
+  // Show login screen if not authenticated
+  if (!isAuthenticated) {
+    return <Login onLogin={handleLogin} />;
+  }
 
   const getTabsForRole = (role: string) => {
     const commonTabs = [
