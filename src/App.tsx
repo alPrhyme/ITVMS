@@ -62,11 +62,6 @@ function App() {
     }
   }, [currentRole]);
 
-  // Show login screen if not authenticated
-  if (!isAuthenticated) {
-    return <Login onLogin={handleLogin} />;
-  }
-
   const getTabsForRole = (role: string) => {
     const commonTabs = [
       { id: 'dashboard', name: 'Dashboard', icon: Home }
@@ -91,6 +86,11 @@ function App() {
   };
 
   const tabs = getTabsForRole(currentRole);
+
+  // Show login screen if not authenticated
+  if (!isAuthenticated) {
+    return <Login onLogin={handleLogin} />;
+  }
 
   const renderContent = () => {
     switch (activeTab) {
