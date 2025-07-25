@@ -1,0 +1,173 @@
+{
+  "violations": [
+    {
+      "id": "VIO-2025-001",
+      "type": "speeding",
+      "severity": "high",
+      "vehicleNumber": "GR-1234-25",
+      "location": "Accra-Tema Motorway, Km 15",
+      "coordinates": [5.6037, -0.1870],
+      "timestamp": "2025-01-15T08:30:00Z",
+      "speed": 120,
+      "speedLimit": 80,
+      "fine": 500,
+      "status": "pending",
+      "camera": "CAM-ATM-15",
+      "weather": "clear",
+      "offenderName": "Kwame Asante",
+      "offenderPhone": "+233244123456",
+      "processed": false
+    },
+    {
+      "id": "VIO-2025-002",
+      "type": "red_light",
+      "severity": "critical",
+      "vehicleNumber": "AS-5678-24",
+      "location": "37 Military Hospital Junction",
+      "coordinates": [5.5692, -0.1958],
+      "timestamp": "2025-01-15T14:15:00Z",
+      "fine": 800,
+      "status": "notified",
+      "camera": "CAM-37MH-01",
+      "weather": "rainy",
+      "offenderName": "Akosua Mensah",
+      "offenderPhone": "+233201987654",
+      "processed": true
+    },
+    {
+      "id": "VIO-2025-003",
+      "type": "illegal_turn",
+      "severity": "moderate",
+      "vehicleNumber": "WR-9012-23",
+      "location": "Osu Oxford Street",
+      "coordinates": [5.5500, -0.1681],
+      "timestamp": "2025-01-15T16:45:00Z",
+      "fine": 300,
+      "status": "paid",
+      "camera": "CAM-OSU-03",
+      "weather": "clear",
+      "offenderName": "Emmanuel Boateng",
+      "offenderPhone": "+233266345678",
+      "processed": true
+    },
+    {
+      "id": "VIO-2025-004",
+      "type": "speeding",
+      "severity": "moderate",
+      "vehicleNumber": "BA-3456-25",
+      "location": "East Legon Junction",
+      "coordinates": [5.6508, -0.1467],
+      "timestamp": "2025-01-15T10:20:00Z",
+      "speed": 75,
+      "speedLimit": 50,
+      "fine": 350,
+      "status": "pending",
+      "camera": "CAM-EL-02",
+      "weather": "clear",
+      "offenderName": "Faustina Addo",
+      "offenderPhone": "+233244567890",
+      "processed": false
+    },
+    {
+      "id": "VIO-2025-005",
+      "type": "wrong_lane",
+      "severity": "moderate",
+      "vehicleNumber": "GT-7890-24",
+      "location": "Kaneshie Market Junction",
+      "coordinates": [5.5569, -0.2317],
+      "timestamp": "2025-01-15T12:00:00Z",
+      "fine": 250,
+      "status": "pending",
+      "camera": "CAM-KAN-01",
+      "weather": "clear",
+      "offenderName": "Joseph Owusu",
+      "offenderPhone": "+233209876543",
+      "processed": false
+    }
+  ],
+  "cameras": [
+    {
+      "id": "CAM-ATM-15",
+      "location": "Accra-Tema Motorway, Km 15",
+      "coordinates": [5.6037, -0.1870],
+      "type": "speed_camera",
+      "status": "active",
+      "lastMaintenance": "2025-01-10",
+      "violationsToday": 15
+    },
+    {
+      "id": "CAM-37MH-01",
+      "location": "37 Military Hospital Junction",
+      "coordinates": [5.5692, -0.1958],
+      "type": "red_light_camera",
+      "status": "active",
+      "lastMaintenance": "2025-01-12",
+      "violationsToday": 8
+    },
+    {
+      "id": "CAM-OSU-03",
+      "location": "Osu Oxford Street",
+      "coordinates": [5.5500, -0.1681],
+      "type": "traffic_camera",
+      "status": "maintenance",
+      "lastMaintenance": "2025-01-08",
+      "violationsToday": 0
+    }
+  ],
+  "agencies": [
+    {
+      "id": "GPS",
+      "name": "Ghana Police Service",
+      "contact": "+233302773906",
+      "officers": 245,
+      "activeUnits": 18
+    },
+    {
+      "id": "DVLA",
+      "name": "Driver and Vehicle Licensing Authority",
+      "contact": "+233302665401",
+      "officers": 89,
+      "activeUnits": 12
+    },
+    {
+      "id": "NRSA",
+      "name": "National Road Safety Authority",
+      "contact": "+233302913596",
+      "officers": 67,
+      "activeUnits": 8
+    }
+  ],
+  "statistics": {
+    "totalViolationsToday": 47,
+    "totalFinesCollected": 15650,
+    "activeCameras": 127,
+    "highRiskZones": 8,
+    "responseTime": 12.5
+  },
+  "users": [
+    {
+      "id": "U001",
+      "name": "Inspector John Doe",
+      "role": "police_officer",
+      "agency": "GPS",
+      "phone": "+233244000001",
+      "badgeNumber": "GPS-001"
+    },
+    {
+      "id": "U002",
+      "name": "Sarah Mensah",
+      "role": "dvla_officer",
+      "agency": "DVLA",
+      "phone": "+233244000002",
+      "staffId": "DVLA-045"
+    },
+    {
+      "id": "U003",
+      "name": "Michael Asante",
+      "role": "nrsa_analyst",
+      "agency": "NRSA",
+      "phone": "+233244000003",
+      "staffId": "NRSA-012"
+    }
+  ]
+}
