@@ -35,22 +35,11 @@ function App() {
   };
 
   const handleRoleChange = (role: string) => {
-    // In a real system, this would check if the user has permission for this role
+    // Require re-authentication when switching roles
+    setIsAuthenticated(false);
+    setCurrentUser(null);
     setCurrentRole(role);
-    
-    // Update current user name based on role for demo purposes
-    const userMap = {
-      police_officer: 'Inspector John Doe',
-      dvla_officer: 'Sarah Mensah', 
-      nrsa_analyst: 'Michael Asante',
-      public: 'Public User'
-    };
-    
-    setCurrentUser({
-      ...currentUser,
-      name: userMap[role as keyof typeof userMap] || currentUser.name,
-      role: role
-    });
+    setActiveTab('dashboard');
   };
 
   useEffect(() => {
